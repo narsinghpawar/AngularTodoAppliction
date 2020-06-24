@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TodoAppliction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <!--<form #userForm = "ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <div class="container my-4">
+            <h4>login works!</h4>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">User Name:</label>
+                        <input   required #username='ngModel' type="UserName" ngModel class="form-control" 
+                        name="username">
+                        <span *ngIf="username.invalid && username.touched" class="error"> User Name is required !</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password:</label>
+                        <input required #password='ngModel' type="password" ngModel class="form-control"
+                         name="password">
+                        <span *ngIf="password.invalid && password.touched" class="error"> Password is required !</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group form-check">
+                        <input  type="checkbox" class="form-check-input" name="checkbox">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                </div>
+            </div>-->
+    <!--<div class="row">
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary" (click)=handleLogin()>Login</button>
+                </div>
+            </div>
+        </div>
+    </form>-->
+
+
+
+    <div class="container d-flex justify-content-center">
+        <div class="col-md-10 my-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">Login TodoAppliction !</div>
+                <div class="card-body">
+                    <img src="https://source.unsplash.com/500x300/?login,login" class="rounded float-right img-fluid" alt="...">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="username">User Name:</label>
+                                <input type="text" name="username" [(ngModel)]="username" class="form-control ">
+                                <span *ngIf='invalidLogin' calss="error" id="err">{{errormessage}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="username">Password:</label>
+                                <input type="password" name="password" [(ngModel)]="password" class="form-control ">
+                                <span *ngIf='invalidLogin' calss="error" id="err">{{errormessage}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-sm-8">
+                            <button class="btn btn-primary " type="submit" (click)=handleLogin()>Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div> 
+    </div>
+</body>
+
+</html>

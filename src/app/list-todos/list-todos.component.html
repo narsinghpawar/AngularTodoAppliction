@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TodoAppliction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <h4 class="my-4">My Todo's</h4>
+    <div class="container my-4">
+
+        <div class="table-responsive">
+
+            <table #dataTable class="table table-border">
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">Description</th>
+                        <th scope="col">Target Date</th>
+                        <th scope="col">Is Completed?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Enhanced for loop 
+                    for(Todo todo: todos){-->
+                    <tr *ngFor="let todo of todos">
+                        <td>{{todo.description}}</td>
+                        <td>{{todo.targetDate | date}}</td>
+                        <td>{{todo.done}}</td>
+
+                    </tr>
+                    <!--}-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
